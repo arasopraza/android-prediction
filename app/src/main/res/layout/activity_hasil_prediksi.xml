@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasilPrediksiActivity">
+
+    <TextView
+        android:id="@+id/tv_hasil_prediksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/hasil_prediksi"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/tv_harga_jual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/harga_jual_bawang_merah_bulan_depan"
+        app:layout_constraintStart_toStartOf="@+id/tv_hasil_prediksi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hasil_prediksi" />
+
+    <TextView
+        android:id="@+id/tv_rupiah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_harga_jual"
+        app:layout_constraintTop_toBottomOf="@+id/tv_harga_jual" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prediksi Harga Komoditas</string>
+    <string name="pilih_komoditas">Pilih Komoditas :</string>
+    <string name="curah_hujan_mm">Curah Hujan (mm) :</string>
+    <string name="produksi_ton">Produksi (Ton) :</string>
+    <string name="masukkan_angka">Masukkan Angka</string>
+    <string name="proses">Proses</string>
+    <string name="hasil_prediksi">Hasil Prediksi</string>
+    <string name="harga_jual_bawang_merah_bulan_depan">Harga Jual Bawang Merah Bulan Depan:</string>
+    <string name="rp">Rp.</string>
+</resources>
