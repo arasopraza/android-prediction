@@ -8,4 +8,8 @@
     <string name="hasil_prediksi">Hasil Prediksi</string>
     <string name="harga_jual_bawang_merah_bulan_depan">Harga Jual Bawang Merah Bulan Depan:</string>
     <string name="rp">Rp.</string>
+    <string name="please_wait">Mohon Tunggu</string>
+    <string name="kg">/KG</string>
+    <string name="_10000">10000</string>
+    <string name="guide">Panduan</string>
 </resources>

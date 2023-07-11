@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/tv_pilih_komoditas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:text="@string/pilih_komoditas"
+        android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_proccess"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/curah_hujan_mm"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_pilih_komoditas"
         app:layout_constraintTop_toBottomOf="@+id/tv_pilih_komoditas" />
@@ -33,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/produksi_ton"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_curah_hujan"
         app:layout_constraintTop_toBottomOf="@+id/tv_curah_hujan" />
@@ -42,12 +46,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:autofillHints="@string/masukkan_angka"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="@string/masukkan_angka"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_curah_hujan"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_curah_hujan"
         app:layout_constraintTop_toTopOf="@+id/tv_curah_hujan" />
 
@@ -55,22 +62,29 @@
         android:id="@+id/et_produksi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autofillHints="@string/masukkan_angka"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="@string/masukkan_angka"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
         android:textSize="16sp"
-        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_produksi"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_produksi"
         app:layout_constraintTop_toTopOf="@+id/tv_produksi" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerKomoditas"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_pilih_komoditas"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_pilih_komoditas"
         app:layout_constraintTop_toTopOf="@+id/tv_pilih_komoditas" />
 
@@ -78,12 +92,24 @@
         android:id="@+id/btn_proccess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/proses"
+        android:background="@color/teal_200"
         android:backgroundTint="@android:color/white"
-        android:textColor="@color/black"
+        android:text="@string/proses"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_produksi" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/tv_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide"
+        android:textColor="@color/purple_500"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_curah_hujan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_curah_hujan" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
